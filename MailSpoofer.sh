@@ -55,7 +55,10 @@ echo  ' Receiver -> '  $receiver
 echo  ' Message -> '  $message
 echo  ' Subject -> '  $subject
 
-curl --data "r_email=$receiver && subject=$subject && message=$message && s_name=$sendername && s_email=$sender" http://5hrmailspoofer.000webhostapp.com/mailer.php
+#change the url below to your owned (advised for privacy)
+phpserverurl = "http://5hrmailspoofer.000webhostapp.com/mailer.php"
+
+curl --data "r_email=$receiver && subject=$subject && message=$message && s_name=$sendername && s_email=$sender" $phpserverurl
 
 clear
 Banner
